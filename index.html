@@ -250,8 +250,8 @@
             <li class="list-item-team">
               <img
                 srcset="
-                  ./images/our-team/tom-ford.jpg 1x,
-                  ./images/our-team/tom-ford.jpg 2x
+                  ./images/our-team/tom-ford.jpg    1x,
+                  ./images/our-team/tom-ford-2x.jpg 2x
                 "
                 src="./images/our-team/tom-ford.jpg"
                 alt="Tom Ford"
@@ -294,7 +294,10 @@
             </li>
             <li class="list-item-team">
               <img
-                srcset="./images/our-team/camila-garcia.jpg 1x ./images/our-team/camila-garcia-2x.jpg 2x"
+                srcset="
+                  ./images/our-team/camila-garcia.jpg    1x,
+                  ./images/our-team/camila-garcia-2x.jpg 2x
+                "
                 src="./images/our-team/camila-garcia.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -514,7 +517,13 @@
           </svg>
         </button>
         <ul class="list mob-menu-list">
-          <li><a class="link mob-menu-link" href="./index.html">Studio</a></li>
+          <li>
+            <a
+              class="link mob-menu-link mob-menu-link-studio"
+              href="./index.html"
+              >Studio</a
+            >
+          </li>
           <li>
             <a class="link mob-menu-link" href="./portfolio.html">Portfolio</a>
           </li>
@@ -534,38 +543,36 @@
             </li>
           </ul>
         </address>
-        <div class="mob-social">
-          <ul class="list mob-social-list">
-            <li class="mob-social-item">
-              <a href="" class="mob-social-media-link">
-                <svg class="mob-social-media-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="mob-social-item">
-              <a href="" class="mob-social-media-link">
-                <svg class="mob-social-media-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="mob-social-item">
-              <a href="" class="mob-social-media-link">
-                <svg class="mob-social-media-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="mob-social-item">
-              <a href="" class="mob-social-media-link">
-                <svg class="mob-social-media-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+        <ul class="list mob-social-list">
+          <li class="mob-social-item">
+            <a href="" class="mob-social-media-link">
+              <svg class="mob-social-media-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-social-item">
+            <a href="" class="mob-social-media-link">
+              <svg class="mob-social-media-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-social-item">
+            <a href="" class="mob-social-media-link">
+              <svg class="mob-social-media-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-social-item">
+            <a href="" class="mob-social-media-link">
+              <svg class="mob-social-media-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
 
@@ -671,13 +678,13 @@
         <p class="label-text">Leave your contacts and we will call you back</p>
         <form class="modal-form">
           <div class="container-field">
-            <label class="contact-form-field" for="user-name">Name</label>
+            <label class="contact-form-field" for="user-name-modal">Name</label>
             <div class="container-input">
               <input
                 class="input-item"
                 type="text"
-                id="user-name"
-                name="user-name"
+                id="user-name-modal"
+                name="user-name-modal"
               />
               <svg class="input-icon" width="18" height="24">
                 <use
@@ -688,13 +695,15 @@
             </div>
           </div>
           <div class="container-field">
-            <label class="contact-form-field" for="user-phone">Phone</label>
+            <label class="contact-form-field" for="user-phone-modal"
+              >Phone</label
+            >
             <div class="container-input">
               <input
                 class="input-item"
                 type="text"
-                id="user-phone"
-                name="user-phone"
+                id="user-phone-modal"
+                name="user-phone-modal"
               />
               <svg class="input-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-phone"></use>
@@ -702,13 +711,15 @@
             </div>
           </div>
           <div class="container-field">
-            <label class="contact-form-field" for="user-email">Email</label>
+            <label class="contact-form-field" for="user-email-modal"
+              >Email</label
+            >
             <div class="container-input">
               <input
                 class="input-item"
                 type="text"
-                id="user-email"
-                name="icon-email"
+                id="user-email-modal"
+                name="user-email-modal"
               />
               <svg class="input-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-email"></use>
@@ -716,11 +727,13 @@
             </div>
           </div>
           <div class="container-comment">
-            <label class="contact-form-field" for="user-comment">Comment</label>
+            <label class="contact-form-field" for="user-comment-modal"
+              >Comment</label
+            >
             <textarea
               class="comment-item"
-              name="user-comment"
-              id="user-comment"
+              name="user-comment-modal"
+              id="user-comment-modal"
               cols="30"
               rows="10"
               placeholder="Text input"
@@ -729,12 +742,12 @@
           <div class="container-checkbox">
             <input
               class="visually-hidden checkbox-item"
-              id="user-privacy"
+              id="user-privacy-modal"
               type="checkbox"
               value="true"
-              name="user-privacy"
+              name="user-privacy-modal"
             />
-            <label class="privacy-policy" for="user-privacy"
+            <label class="privacy-policy" for="user-privacy-modal"
               ><span class="checkbox-border"
                 ><svg class="checkbox-icon" width="10" height="8">
                   <use
